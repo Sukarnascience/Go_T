@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
             val data:TextView= findViewById(R.id.textView2)
             val Acdata:Int = (1..6).random()
             data.text="$Acdata"
-
             val DiceImage: ImageView= findViewById(R.id.imageView2)
             when(Acdata) {
                 1 -> DiceImage.setImageResource(R.drawable.dice_1)
