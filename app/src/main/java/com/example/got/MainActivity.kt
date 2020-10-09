@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"Dice Rolled!",Toast.LENGTH_SHORT).show()
             val data:TextView= findViewById(R.id.textView2)
             val Acdata:Int = (1..6).random()
-            data.text="$Acdata"
             val DiceImage: ImageView= findViewById(R.id.imageView2)
             when(Acdata) {
                 1 -> DiceImage.setImageResource(R.drawable.dice_1)
@@ -27,6 +26,7 @@ class MainActivity : AppCompatActivity() {
                 5 -> DiceImage.setImageResource(R.drawable.dice_5)
                 6 -> DiceImage.setImageResource(R.drawable.dice_6)
             }
+            data.text="$Acdata"
         }
     }
 }
